@@ -1,0 +1,299 @@
+.flex-container-header {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-flow: row nowrap;
+
+    align-items: center;
+
+    margin: 2px 24px;
+    width: 1800px;
+    height: 90px;
+}
+
+
+/* HEADER LEFT SIDE */
+.flex-container-header .header-left-side {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 1;
+}
+
+.flex-container-header .header-left-side>img {
+    width: auto;
+    height: 26px;
+
+    margin-right: 40px;
+}
+
+.flex-container-header .google-search {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+    width: 650px;
+    border: 1px solid rgb(220, 220, 220);
+    border-radius: 25px;
+    padding: 11px 0px;
+}
+
+.flex-container-header .google-search:focus,
+.flex-container-header .google-search:focus-within,
+.flex-container-header .google-search:hover {
+    box-shadow: 0px 1px 6px rgba(50, 50, 50, 0.3);
+}
+
+.flex-container-header .google-search i {
+    position: absolute;
+    color: rgb(37, 135, 246);
+    
+    top: 12px;
+    right: 20px;
+}
+
+.flex-container-header .google-search #google-mic {
+    position: absolute;
+    height: 18px;
+    width: auto;
+    right: 55px;
+
+    border-left: 1px solid rgb(220, 220, 220);
+    padding-left: 12px;
+}
+
+.flex-container-header .google-search #cancel-cross{
+    position: absolute;
+    right: 91px;
+
+    transform: scale(1.2);
+    color: rgb(190, 190, 190);    
+}
+
+.flex-container-header .google-search #google-search-bar {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #555;
+    font-size: 16px;
+    font-weight: 100;
+
+    width: 100%;
+    border: 0;
+
+    margin: 0px 12px;
+}
+
+/********************* HEADER RIGHT SIDE */
+.flex-container-header .header-right-side {
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    right: 25px;
+}
+
+.flex-container-header #profile-img {
+    width: 35px;
+    border-radius: 50%;
+
+    margin-top: 3px;
+}
+
+.flex-container-header .rounded-hover>i {
+    color: #777;
+    padding-top: 10px;
+
+}
+
+.flex-container-header .rounded-hover {
+    background-color: transparent;
+    text-align: center;
+
+    border-radius: 50%;
+    
+    width: 35px;
+    height: 35px;
+
+    margin-left: 12px;
+}
+
+.flex-container-header .profile {
+    width: 42px;
+    height: 42px;
+
+}
+
+.rounded-hover:hover {
+    background-color: rgba(190, 190, 190, .35);
+    cursor: pointer;
+}
+
+
+/************************************* SECONDARY HEADER MAIN */
+.flex-container-header-secondary {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+
+    width: 1920px;
+    margin: 0 auto;
+    margin-top: 8px;
+
+    border-bottom: 1px solid rgba(190, 190, 190, .35);
+}
+
+
+.active {
+    border-bottom: 3px solid rgb(0, 119, 255);
+    width: 60px;
+    text-align: center;
+    padding-bottom: 12px;
+}
+
+.active i {
+    color: rgb(0, 119, 255);
+}
+
+
+.flex-container-header-secondary .header-sections li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.flex-container-header-secondary .header-sections a {
+    color: #555;
+    text-decoration: none;
+}
+
+.flex-container-header-secondary .header-sections {
+    display: inline-block;
+    margin-left: 160px;
+}
+
+.flex-container-header-secondary #header-settings {
+    display: inline-block;
+    margin-left: 130px;
+}
+
+.flex-container-header-secondary #header-settings a{
+    color: #555;
+    text-decoration: none;
+    margin-right: 16px;
+}
+
+.flex-container-header-secondary #header-settings a:last-child{
+    border: 1px solid transparent;
+    padding: 6px 12px;
+    margin-right: 12px;
+}
+
+.flex-container-header-secondary #header-settings a:last-child:hover{
+    background-color: rgba(190, 190, 190, .35);
+    text-decoration: none;
+
+    border: 1px solid rgba(190, 190, 190, .65);
+}
+
+.flex-container-header-secondary #safe-search {
+    position: absolute;
+    right: 32px;
+}
+
+
+
+/* ********************************* MAIN STARTS HERE */
+main {
+    font-family: Arial, Helvetica, sans-serif;
+    
+    width: 660px;
+    height: 100vh;
+
+    margin-left: 160px;
+    padding: 12px;
+}
+
+main #number-of-results {
+    color: #555;
+    font-size: 13px;
+}
+
+.main-result {
+    margin-top: 24px;
+    margin-right: 24px;
+}
+
+.main-result .web-ad {
+    display: block;
+
+    color: #444;
+    font-size: 13px;
+    margin: 6px 0px;
+}
+
+.main-result .web-ad::after {
+    content: ' \25BC ';
+
+    color: #555;
+    width: 12px;
+    margin-left: 2px;
+}
+
+.main-result .web-ad b{
+    font-weight: bold;
+}
+
+.main-result .web-ad b::after{
+    content: '  .  ';
+    display: inline-block;
+    margin-left: 6px;
+    margin-right: 1px;
+    vertical-align: 3px;
+}
+
+
+
+.main-result h2,
+.main-result h3 {
+    color: rgb(37, 48, 153);
+    font-size: 1.25em;
+
+    border-bottom: 2px solid transparent;
+}
+
+.main-result h2:hover,
+.main-result h3:hover {
+    border-bottom: 2px solid rgb(37, 48, 153);
+    width: max-content;
+}
+
+.main-result a{
+    text-decoration: none;
+}
+
+.main-result p{
+    color: #444;
+    font-size: 13px;
+    line-height: 22px;
+    margin-top: 4px;
+}
+
+.result-grid-breadcrumbs{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 18px;
+
+    margin-top: 20px;
+    margin-left: 32px;
+    margin-right: 12px;
+}
+
+
+@media all and (max-width: 1050px) {
+    .flex-container-header .header-right-side {
+        position: relative;
+        right: 817px;
+    }
+
+    .flex-container-header-secondary #safe-search {
+        position: relative;
+        left: 0px;
+    }
+}
